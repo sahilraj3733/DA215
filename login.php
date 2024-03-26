@@ -31,37 +31,43 @@
  }
 
 ?>
-
 <!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
     
     <title>Login</title>
+   <link rel="stylesheet" href="home.css">
     
 </head>
 <body>
-    <div class="container" >
+    <div class="container1" >
+        <div class="box">
+            <div class="container2">
+                <div class="form-main">
         <form action='login.php' method ='post' >
 
              
             
-            <label>User Name:</label>
-            <input type="text" name='user'>
+            <label class="label">User Name:</label>
+            <input type="text" name='user' class="box-nav">
             <br><br>
-            <label>Password :</label>
-            <input type="text" name='password'>
+            <label class="label">Password :</label>
+            <input type="text" name='password' class="box-nav">
             <br><br>
-            <select id="role" name="role" required>
+            <select id="role" name="role" required class="select">
                 <option value="" disabled selected>Select Role</option>
                 <option value="Student">Student</option>
                 <option value="Admin">Admin</option>
             </select>
-            <button>login</button>
-
+            <button id="button">login</button>
+            <br>
+            <br>
             <a href="signup.php">Create Account</a>
         </form>
     </div>
-    
+</div>
+</div>
+</div>
 </body>
 </html>

@@ -17,6 +17,7 @@ if(!isset($_SESSION['sid'])){
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
+
 <div class="container">
         
         <header>
@@ -43,31 +44,36 @@ if(!isset($_SESSION['sid'])){
 
 
 
-    
-<div class="mid">
-        
-        <table class="table">
-  <thead>
+   
+<div class="mytable">
+<header>Registered Exam</header>   
+ <table id="Table">
+  
     <tr>
-      <th scope="col"> Registered Exam    </th>
+      <th > EID    </th>
       
-      <th scope="col">operation</th>
+      <th >Name</th>
+      <th> </th>
     </tr>
-  </thead>
-  <tbody>
+  
+ 
    <?php
      $t=$_SESSION['sid'];
-   $sql="select * from `register` where sid= '$t'";
+   $sql="SELECT exam.eid,exam.ename
+    from `register`
+    INNER JOIN exam ON register.eid = exam.eid
+     where register.sid= '$t'";
    $result=mysqli_query($conn,$sql);
    if($result){
     while($row=mysqli_fetch_assoc($result)){
         $eid=$row['eid'];
+        $ename=$row['ename'];
         
         
         echo  '<tr>
-            <th scope="row">'.$eid.'</th>
+            <td >'.$eid.'</td>
+            <td>'.$ename.'</td>
            
-
 
              <td>
              <button > <a href="Start.php?start='.$eid.' ">Start</a></button>
@@ -78,12 +84,11 @@ if(!isset($_SESSION['sid'])){
     }
    }
    ?>
-   <a href="adminhome.php">Home page</a>
-    
+   
 
 
 
-  </tbody>
+ 
   
 </table>
     </div>

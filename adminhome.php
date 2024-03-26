@@ -44,18 +44,18 @@ if(!isset($_SESSION['sid'])){
    
    
     </div>
-    <div class="mid">
-        <a href="addexam.php">Add Exam</a>
-        <table class="table">
-  <thead>
+    <div class="mytable">
+        <button ><a href="addexam.php">Add Exam</a></button>
+        <table id="Table">
+  
     <tr>
-      <th scope="col">Exam ID    </th>
-      <th scope="col">Exam Name   </th>
-      <th scope="col">Fees   </th>
-      <th scope="col">Operations</th>
+      <th >Exam ID    </th>
+      <th >Exam Name   </th>
+      <th >Fees   </th>
+      <th >Operations</th>
     </tr>
-  </thead>
-  <tbody>
+  
+  
    <?php
 
    $sql="select * from `exam` ";
@@ -66,7 +66,7 @@ if(!isset($_SESSION['sid'])){
         $ename=$row['ename'];
         $fees=$row['fees'];
         echo  '<tr>
-            <th scope="row">'.$eid.'</th>
+            <td>'.$eid.'</th>
             <td>'.$ename.'</td>
             <td>'.$fees.'</td>
             <td><button > <a href="question.php?examid='.$eid.'">Questions</a></button>
@@ -82,7 +82,7 @@ if(!isset($_SESSION['sid'])){
 
 
 
-  </tbody>
+  
   
 </table>
     </div>
@@ -91,5 +91,3 @@ if(!isset($_SESSION['sid'])){
 </html>
 
     
-</body>
-</html>

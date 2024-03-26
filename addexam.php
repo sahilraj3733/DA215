@@ -29,28 +29,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <head>
     <meta charset="UTF-8">
-    
+    <link rel="stylesheet" href="home.css">
     <title>Exam</title>
     
 </head>
 <body>
-    <div class="container" >
-        <form action='addexam.php' method ='post' >
-
-             
-            
-            <label>Exam ID:</label>
-            <input type="text" name='eid'>
+<div class="container1" >
+    <div class="box">
+        <div class="container2">
+            <div class="form-main">
+            <form action='addexam.php' method ='post' >
+            <label class="label">Exam ID:</label>
+            <input type="text" name='eid' class="box-nav">
             <br><br>
-            <label>Exam Name :</label>
-            <input type="text" name='name'>
+            <label class="label">Exam Name :</label>
+            <input type="text" name='name' class="box-nav">
             <br><br>
-            <label >Fee</label>
-            <input type="int" name='fee'>
+            <label class="label">Fee:</label>
+            <input type="int" name='fee' class="box-nav"><br>
 
-            <button>Add </button>
-        </form>
+            <button id="button">Add </button>
+            </form>
+            </div>
+        </div>
     </div>
-    
+</div>
 </body>
 </html>
