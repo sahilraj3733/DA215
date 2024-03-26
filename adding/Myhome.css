@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.violet {
+  width: 100%;
+  height: 15vh;
+  background-color: #b94eea;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.violet h1 {
+  font-size: 52px;
+  font-weight: 600;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.violet h2{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: aquamarine;
+} 
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  /* background-color: #b94eea; */
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 10px;
+  border-radius: 2px;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.mytable{
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items:center;
+  justify-content: center;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+#Table {
+  border-collapse: collapse;
+  width: 60%;
+  height: 100%;
+  background-color: antiquewhite;
+}
+
+#Table td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#Table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
