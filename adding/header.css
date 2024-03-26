@@ -1,0 +1,68 @@
+/* Header.css */
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+    width: 100vw;
+    height: 10vh;
+    top: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 10%;
+    justify-content: space-between;
+    background-color: rgb(250, 250, 244);
+    z-index: 1000; 
+  }
+  
+  .header__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header__lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header__lists > li {
+    list-style-type: none;
+    padding: 10px;
+  }
+  
+  .header__lists > li > a {
+    text-decoration: none;
+    color: #0568CA;
+  }
+  
+  /* .header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  /* .header__right > li {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .header__right > li > a {
+    text-decoration: none;
+    color: #0568CA;
+  } */
+  
+    /* .header__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header__left > img {
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+  } */
+  
